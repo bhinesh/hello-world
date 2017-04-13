@@ -45,8 +45,10 @@ class Vector(object):
             raise Exception('Cannot normalize the zero vector')
         
     def dot(self,v):
-        return sum(x*y for x,y in zip(self.coordinates,v.coordinates)]
-                
+        return sum(x*y for x,y in zip(self.coordinates,v.coordinates)
+                   
+    def test(self):
+        return 1
     
 v1 = Vector([-0.221,7.437])
 v2=Vector([8.813,-1.331,-6.247])
